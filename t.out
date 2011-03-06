@@ -1,0 +1,260 @@
+You must 'gem install win32console' to use colour on Windows
+.F.F.FFFFF
+
+Failures:
+  1) PagesController GET 'home' should have the right title
+     Failure/Error: response.should have_selector("title",
+     expected following output to contain a <title>My sample app | Home</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>Sample App</h1>
+     <p>
+          This is the home page for the 
+          <a href="http://railstutorial.org/">Ruby Tutorial</a>
+          Sample Application
+     </p>
+     
+     <a href="#" class="signup_button round">Sign up now!</a>
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/controllers/pages_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) PagesController GET 'contact' should have the right title
+     Failure/Error: response.should have_selector("title",
+     expected following output to contain a <title>My sample app | Contact</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>Contact</h1>
+     <p>
+       Contact Murali Janakiraman 
+       <a href="http://jmd.com/">Go For IT</a>
+     </p>
+      
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/controllers/pages_controller_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  3) PagesController GET 'about' should have the right title
+     Failure/Error: response.should have_selector("title",
+     expected following output to contain a <title>My sample app | About</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>About Us</h1>
+     <p>
+        This is the journet to learn rails and make wonders 
+        <a href="http://railstutorial.org/">Ruby Tutorial</a>
+     </p>
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/controllers/pages_controller_spec.rb:40:in `block (3 levels) in <top (required)>'
+
+  4) LayoutLinks should have a Home page at '/'
+     Failure/Error: response.should have_selector('title', :content => "Home")
+     expected following output to contain a <title>Home</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>Sample App</h1>
+     <p>
+          This is the home page for the 
+          <a href="http://railstutorial.org/">Ruby Tutorial</a>
+          Sample Application
+     </p>
+     
+     <a href="#" class="signup_button round">Sign up now!</a>
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/requests/layout_links_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+  5) LayoutLinks should have a Contact page at '/contact'
+     Failure/Error: response.should have_selector('title', :content => "Contact")
+     expected following output to contain a <title>Contact</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>Contact</h1>
+     <p>
+       Contact Murali Janakiraman 
+       <a href="http://jmd.com/">Go For IT</a>
+     </p>
+      
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/requests/layout_links_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+  6) LayoutLinks should have a About page at '/about'
+     Failure/Error: response.should have_selector('title', :content => "About")
+     expected following output to contain a <title>About</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>About Us</h1>
+     <p>
+        This is the journet to learn rails and make wonders 
+        <a href="http://railstutorial.org/">Ruby Tutorial</a>
+     </p>
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/requests/layout_links_spec.rb:18:in `block (2 levels) in <top (required)>'
+
+  7) LayoutLinks should have a Help page at '/help'
+     Failure/Error: response.should have_selector('title', :content => "Help")
+     expected following output to contain a <title>Help</title> tag:
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+     <title>#(base_title) | #(@title)</title>
+     <!-- [if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]--><link href="/stylesheets/blueprint/screen.css?1298608348" media="screen" rel="stylesheet" type="text/css">
+     <link href="/stylesheets/blueprint/print.css?1298608348" media="print" rel="stylesheet" type="text/css">
+     <!-- [if lt IE 8]> <![endif]--><link href="/stylesheets/custom.css?1299128191" media="screen" rel="stylesheet" type="text/css">
+     </head>
+     <body>
+          <div class="container">
+         <header><img alt="Sample App" class="round" src="/images/logo.png?1299125181"><nav class="round"><u1><li><a href="#">Home</a></li>
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Sign in</a></li>
+        </u1></nav></header><section class="round"><h1>Help</h1>
+     
+     <p>
+       This is  help page
+       <a href="http://railstutorial.org/help">Tut Help page</a>
+     </p>
+     
+          </section><footer><nav class="round"><u1><li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="http://news.railstutorial.org/">News</a></li>
+         <li><a href="http://news.railstutorial.org/">Rails Tutorial</a></li>
+        </u1></nav></footer>
+     </div>
+        </body>
+     </html>
+     # ./spec/requests/layout_links_spec.rb:23:in `block (2 levels) in <top (required)>'
+
+Finished in 2.52 seconds
+10 examples, 7 failures
